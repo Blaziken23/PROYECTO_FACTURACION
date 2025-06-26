@@ -1,8 +1,5 @@
-#PRIMERO CREAS LA BASE DE DATOOS
-create database plataforma;
-
-#INICIALIZAMOS EN LA BASE DE DATOS YA CREADA
-use plataforma; 
+#CREAR LA BASE DE DATOS 
+create database prueba;
 
 #CREAS LA TABLA USUARIO
 create table usuario(

@@ -1,0 +1,24 @@
+#PRIMERO CREAS LA BASE DE DATOOS
+create database plataforma;
+
+#INICIALIZAMOS EN LA BASE DE DATOS YA CREADA
+use plataforma; 
+
+#CREAS LA TABLA USUARIO
+create table usuario(
+ID int(11) auto_increment primary key,
+nombre varchar(100),
+email varchar(100),
+usuario varchar(50),
+contraseña varchar(80) unique,
+fecha_registro timestamp default CURRENT_TIMESTAMP
+);
+
+#CREAR LA TABLA PARA CURSOS
+create table cursos(
+ID int(11) auto_increment primary key, 
+titulo varchar(100), 
+img longblob , 
+descripcion text,
+Fecha_registro timestamp default CURRENT_TIMESTAMP
+);
